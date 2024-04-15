@@ -1,0 +1,53 @@
+site_name: AdPlatform
+
+nav:
+  - Home: index.md
+
+  - Publisher:
+    - publisher.md
+    - Dashboard: Dashboard.md
+    - Profile Settings: profile_settings.md
+
+  - Advertiser: advertise.md
+
+  - Admin Panel: admin_panel.md
+
+theme:
+#  logo: assets/logo.svg
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
+  font:
+    text: Roboto 300
+
+
+markdown_extensions:
+    - toc:
+        permalink: true
+    - tables
+    - attr_list
+    - pymdownx.emoji
+    - md_in_html
+    - pymdownx.critic
+    - pymdownx.caret
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.tilde
+
+plugins:
+  - search
+  - section-index
+  - mermaid2
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 90%
+      height: auto
+      zoomable: true
+      draggable: true
+
+extra_css:
+  - custom.css
