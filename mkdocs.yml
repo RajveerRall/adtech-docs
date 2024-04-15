@@ -1,8 +1,7 @@
 site_name: AdPlatform
 
 nav:
-  - Home: index.md
-
+#  - Home: index.md
   - Publisher:
     - publisher.md
     - Dashboard: Dashboard.md
