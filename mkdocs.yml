@@ -3,9 +3,19 @@ site_name: AdPlatform
 nav:
 #  - Home: index.md
   - Publisher:
-    - publisher.md
-    - Dashboard: Dashboard.md
-    - Profile Settings: profile_settings.md
+    - publisher/publisher.md
+    - Endpoint: 'publisher/end_points.md'
+    - Dashboard: 'publisher/dashboard.md'
+    - Apps/Domain: 'publisher/apps_domain.md'
+    - Rules: 'publisher/rules.md'
+    - Reports:
+        - Monetization: 'publisher/reports/monetization.md'
+        - Failed Bid: 'publisher/reports/failed_bids.md'
+        - Invalid Bid: 'publisher/reports/invalid_bids.md'
+    - Billing: 'publisher/billing.md'
+    - ADS.TXT: 'publisher/adstxt.md'
+    - Profile Settings: 'publisher/profile_settings.md'
+
 
   - Advertiser: advertise.md
 
