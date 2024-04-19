@@ -72,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#whitelist-any-app-bundle-or-site-domain" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -359,6 +364,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Apps/Domain
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -368,6 +384,32 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#whitelist-any-app-bundle-or-site-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      Whitelist any app bundle or site domain
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -632,6 +674,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#whitelist-any-app-bundle-or-site-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      Whitelist any app bundle or site domain
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -652,6 +711,33 @@
 <p><strong>Note:</strong> This section is under construction. Please check back soon for updates.</p>
 </blockquote>
 <hr />
+<p>Whitelisting allows you to exert granular control over the ad requests you receive for your ad placements (endpoints). By creating a whitelist, you approve specific domains (websites) or app bundle IDs (mobile applications) as authorized to send bid requests for your inventory. 
+Additionally, you can often IAB content categories to further refine targeting and ensure the content aligns with your preferences.</p>
+<p><a class="glightbox" href="../assets/appsdomain.gif" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/appsdomain.gif" /></a></p>
+<h2 id="whitelist-any-app-bundle-or-site-domain">Whitelist any app bundle or site domain<a class="headerlink" href="#whitelist-any-app-bundle-or-site-domain" title="Permanent link">&para;</a></h2>
+<p>To Whitelist End points, you have to configure the below parameters:</p>
+<ul>
+<li>
+<p><strong>EPID</strong>: Each endpoint in your SSP has a unique Endpoint ID. These are used internally to manage the ad spaces.</p>
+</li>
+<li>
+<p><strong>"Want to whitelist?</strong>: SINGLE / MULTIPLE": This allows you to whitelist either:
+SINGLE: One specific domain or app bundle.
+MULTIPLE: A list of domains or app bundles.</p>
+</li>
+<li>
+<p><strong>DOMAIN / APP BUNDLE ID</strong>: The actual domain (e.g., www.example.com) or app bundle ID of the advertiser's property you want to whitelist.</p>
+</li>
+<li>
+<p><strong>URL / STORE URL</strong>: Depending on if it's a website or app, you'll provide a web address or a link to the application on the app store.</p>
+</li>
+<li>
+<p><strong>APP/SITE NAME</strong>: A descriptive name, making it easier to manage your whitelist.</p>
+</li>
+<li>
+<p><strong>PRIMARY CATEGORY/SECONDARY CATEGORY</strong>: You'll select IAB content categories to help with targeting and to ensure the content aligns with your preferences.</p>
+</li>
+</ul>
 
 
 
