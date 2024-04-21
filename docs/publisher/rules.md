@@ -4,7 +4,7 @@
 
 Rules provide precise control over which ad requests are accepted or rejected for specific endpoints in your SSP.  They function as filters, adding another layer of customization beyond whitelisting. Here's the core difference:
 
-## Set up Allow or Block Rules
+## Allow or Block Specific Ads
 
 You can configure the below parameters to allow/block ad request for specific end points.
 

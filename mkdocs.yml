@@ -1,11 +1,11 @@
 site_name: AdPlatform
 
 nav:
-#  - Home: index.md
+#  - Home: 'index.md'
   - Publisher:
-    - publisher/publisher.md
-    - Endpoint: 'publisher/end_points.md'
+    - 'publisher/publisher.md'
     - Dashboard: 'publisher/dashboard.md'
+    - Endpoint: 'publisher/end_points.md'
     - Apps/Domain: 'publisher/apps_domain.md'
     - Rules: 'publisher/rules.md'
     - Reports:
@@ -17,9 +17,52 @@ nav:
     - Profile Settings: 'publisher/profile_settings.md'
 
 
-  - Advertiser: advertise.md
+  - Advertiser:
+    - 'advertise.md'
+    - Dashboard: 'advertisers/dashboard.md'
+    - Endpoint: 'advertisers/end_points.md'
+    - Apps/Domain: 'advertisers/apps_domain.md'
+    - CID/CRID:
+        - Campaigns: 'advertisers/crid/campaigns.md'
+        - Creatives: 'advertisers/crid/creatives.md'
+        - Targeting: 'advertisers/crid/targeting.md'
+    - Rules: 'advertisers/rules.md'
+    - Reports:
+        - Monetization: 'advertisers/reports/monetization.md'
+        - Failed Bid: 'advertisers/reports/failed_bids.md'
+        - Invalid Bid: 'advertisers/reports/invalid_bids.md'
+    - Billing: 'advertisers/billing.md'
+    - ADS.TXT: 'advertisers/adstxt.md'
+    - Profile Settings: 'advertisers/profile_settings.md'
 
-  - Admin Panel: admin_panel.md
+  - Admin Panel:
+    - 'admin/admin.md'
+    - Dashboard: 'admin/dashboard.md'
+    - Reports:
+        - Direct Campaigns: 'admin/reports/direct_campaigns.md'
+        - End-points: 'admin/reports/end_points.md'
+        - Invalid Transcation: 'admin/reports/invalid_transaction.md'
+        - Failed Request: 'admin/reports/failed_request.md'
+    - Accounts:
+      - Pub Account: 'admin/accounts/publishers_account.md'
+      - Adv Account: 'admin/accounts/advertisers_account.md'
+    - Profile:
+        - Pub Account: 'admin/profile/publishers_profile.md'
+        - Adv Account: 'admin/profile/advertisers_profile.md'
+    - End-Points:
+        - Pub EP: 'admin/endpoints/pub_ep.md'
+        - Adv EP: 'admin/endpoints/adv_ep.md'
+    - EP MAP: 'admin/endpoint_mapping.md'
+    - Apps/Domains:
+        - Pub Apps/Sites: 'admin/appsdomain/pub-appssite.md'
+        - Adv Apps/Sites: 'admin/appsdomain/adv-appssite.md'
+    - CID/CRID:
+        - Campaigns: 'admin/crid/campaigns.md'
+        - Creatives: 'admin/crid/creatives.md'
+        - Targeting: 'admin/crid/targeting.md'
+    - Billing:
+        - Pub Billing: 'admin/billing/pub-billing.md'
+        - Adv Billing: 'admin/billing/adv-billing.md'
 
 theme:
 #  logo: assets/logo.svg
