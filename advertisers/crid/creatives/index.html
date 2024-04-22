@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#use-cases" class="md-skip">
+        <a href="#before-you-start" class="md-skip">
           Skip to content
         </a>
       
@@ -790,9 +790,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#use-cases" class="md-nav__link">
+  <a href="#before-you-start" class="md-nav__link">
     <span class="md-ellipsis">
-      Use Cases
+      Before You Start
     </span>
   </a>
   
@@ -808,9 +808,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#admin-panel-workflow" class="md-nav__link">
+  <a href="#how-it-works" class="md-nav__link">
     <span class="md-ellipsis">
-      Admin Panel Workflow
+      How it Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
     </span>
   </a>
   
@@ -1853,9 +1862,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#use-cases" class="md-nav__link">
+  <a href="#before-you-start" class="md-nav__link">
     <span class="md-ellipsis">
-      Use Cases
+      Before You Start
     </span>
   </a>
   
@@ -1871,9 +1880,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#admin-panel-workflow" class="md-nav__link">
+  <a href="#how-it-works" class="md-nav__link">
     <span class="md-ellipsis">
-      Admin Panel Workflow
+      How it Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
     </span>
   </a>
   
@@ -1896,42 +1914,42 @@
 
   <h1>Creatives</h1>
 
-<p>This feature provides admins or POCs with a centralized view and granular control over the individual ad creatives (banners, videos, etc.) that advertisers have submitted for use in their campaigns. Its primary functions include:</p>
-<ul>
-<li>Creative Review &amp; Approval: Meticulously examine each creative to ensure they adhere to your platform's technical specifications, quality standards, and content guidelines.</li>
-<li>Compliance: Protect your platform's reputation by blocking creatives that are misleading, offensive, or violate industry regulations.</li>
-<li>Troubleshooting: Help advertisers resolve creative-related issues that might prevent ads from being displayed properly or optimally.</li>
-</ul>
-<h3 id="use-cases">Use Cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Brand Safety: Prevent ads with inappropriate imagery or messages from appearing on your network.</li>
-<li>Technical Checks: Ensure correct file formats, sizes, and that creatives function as intended across different devices and browsers.</li>
-<li>A/B Testing Facilitation: Assist advertisers in testing multiple creative variations by easily approving and rotating different versions.</li>
-<li>Creative Quality: Reject poor quality, blurry, or low-resolution creatives that could negatively impact user experience.</li>
-<li>Regulatory Adherence: Enforce rules specific to regulated industries (e.g., disclaimers, age restrictions).</li>
-</ul>
+<p>The "Creative" feature is to upload the actual advertisements people will see. Let's break down the key parts:</p>
+<h4 id="before-you-start">Before You Start<a class="headerlink" href="#before-you-start" title="Permanent link">&para;</a></h4>
+<p>The Billing Section: The note at the top reminds you that you must have funds added to your account before creating ads, as you'll need to set a budget.</p>
 <h3 id="key-parameters-explained">Key Parameters Explained<a class="headerlink" href="#key-parameters-explained" title="Permanent link">&para;</a></h3>
 <ul>
-<li>ADV ID / CID / CRID: Identifiers associating the creative with a specific advertiser, campaign, and a unique creative ID.</li>
-<li>AD FORMAT: The type of creative (banner, video, native, audio, etc.).</li>
-<li>SIZE: Dimensions of the creative (particularly important for banner ads).</li>
-<li>CONTENT TYPE: Specifies whether the creative is an image file, HTML code, or a JavaScript snippet.</li>
-<li>AD CONTENT: Depending on your system, might be a preview or the raw code of the ad creative.</li>
-<li>LANDING PAGE: The URL a user is directed to upon clicking the ad.</li>
-<li>START / END TIME: Allows for time-based scheduling of creatives.</li>
-<li>IP / USER FCAP: Frequency capping settings to limit how many times the creative is shown to an individual user or from a single IP address.</li>
-<li>BUDGET: If your platform supports creative-level budgeting, this would control the spend for the specific creative.</li>
-<li>PRICE: Likely refers to a bidding parameter if your DSP uses creative-level bidding.</li>
-<li>STATUS: Controls whether the creative is PENDING for review, ACTIVE, or BLOCKED.</li>
-<li>ACTION: Additional control, likely to 'stop' a creative from being served, but retain it on the platform for future use.</li>
+<li>SELECT CID (Campaign ID): This is where you choose which campaign your new ad will be a part of. Each campaign has its own unique ID number.</li>
+<li>AD FORMAT: The type of ad you want to create:</li>
+<li>BANNER: A static image ad.</li>
+<li>VIDEO: A video ad.</li>
+<li>NATIVE: An ad designed to blend in with the content of the website or app.</li>
+<li>AUDIO: A sound-based ad.</li>
+<li>PUSH: A pop-up notification ad.</li>
+<li>POP: An ad that takes over the entire screen.</li>
+<li>SIZE:  The dimensions of your ad (this is especially important for banner ads).</li>
+<li>CONTENT TYPE  How you will create your ad:</li>
+<li>IMAGE UPLOAD: Uploading a pre-made image file.</li>
+<li>HTML: Writing your ad creative in HTML code.</li>
+<li>JS: Using JavaScript code to create more interactive ads.</li>
+<li>LANDING PAGE:  The website address where people will go if they click on your ad.</li>
+<li>SELECT DATE:  When you want your ad to start running.</li>
+<li>USER FCAP / IP FCAP:  Ways to control how often a single person sees your ad.</li>
+<li>BUDGET: How much money you're willing to spend on showing this specific ad.</li>
+<li>PRICE:  The cost per impression, click, or action (depending on your campaign type).</li>
 </ul>
-<h3 id="admin-panel-workflow">Admin Panel Workflow<a class="headerlink" href="#admin-panel-workflow" title="Permanent link">&para;</a></h3>
+<h3 id="how-it-works">How it Works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Creative Submission: Advertisers upload or create creatives within their account.</li>
-<li>Admin Verification: Admins carefully examine each creative, evaluating content, technical aspects, and adherence to policies.</li>
-<li>Approval or Rejection: The creative is approved (ACTIVE), set to PENDING for additional review, or BLOCKED if it violates guidelines.</li>
-<li>Creative Rotation: For campaign optimization, admins might manage the active set of creatives, ensuring diversity or swapping out underperforming creatives.</li>
+<li>You Design: You choose the ad type, size, and create the ad itself either by uploading an image or using code.</li>
+<li>Upload &amp; Connect: You upload the ad to the DSP and connect it to the right campaign.</li>
+<li>DSP Takes over: The DSP tries to get that ad placed in the apps and websites you targeted!</li>
 </ul>
+<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
+<p>Let's say you're still running your running shoe campaign. You could create a:
+* Banner ad showcasing a new shoe model
+* Size: 300x250 (a common size)
+* Image upload: Use a cool photo of someone running in your shoes
+* Landing page: The product page for that specific shoe on your website.</p>
 
 
 

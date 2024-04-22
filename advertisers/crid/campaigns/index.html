@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#use-cases" class="md-skip">
+        <a href="#key-parameters-explained" class="md-skip">
           Skip to content
         </a>
       
@@ -769,15 +769,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#use-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      Use Cases
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#key-parameters-explained" class="md-nav__link">
     <span class="md-ellipsis">
       Key Parameters Explained
@@ -787,18 +778,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#campaign-type-definitions" class="md-nav__link">
+  <a href="#how-it-works" class="md-nav__link">
     <span class="md-ellipsis">
-      Campaign Type Definitions
+      How It Works
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#admin-panel-workflow" class="md-nav__link">
+  <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
-      Admin Panel Workflow
+      Example
     </span>
   </a>
   
@@ -1862,15 +1853,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#use-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      Use Cases
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#key-parameters-explained" class="md-nav__link">
     <span class="md-ellipsis">
       Key Parameters Explained
@@ -1880,18 +1862,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#campaign-type-definitions" class="md-nav__link">
+  <a href="#how-it-works" class="md-nav__link">
     <span class="md-ellipsis">
-      Campaign Type Definitions
+      How It Works
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#admin-panel-workflow" class="md-nav__link">
+  <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
-      Admin Panel Workflow
+      Example
     </span>
   </a>
   
@@ -1914,46 +1896,35 @@
 
   <h1>Campaigns</h1>
 
-<p>This section empowers admins or POCs with centralized control and oversight of advertising campaigns created by advertisers on your DSP.  Primary functions include:</p>
-<p>Campaign Verification: Thoroughly review campaign details, creatives, and targeting settings submitted by advertisers to ensure alignment with platform standards and brand safety guidelines.
-Optimization &amp; Troubleshooting: Directly edit campaign parameters to improve performance, address technical issues, or respond to changes in advertiser requirements.
-Enforcement: Pause, stop, or block campaigns that violate platform policies, potentially protecting your network's integrity and advertiser relationships.</p>
-<h3 id="use-cases">Use Cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Content Moderation: Prevent the launch of campaigns with objectionable content, inappropriate targeting, or misleading creatives.</li>
-<li>Targeting Refinement: Adjust targeting parameters (demographics, location, keywords, etc.) if an admin sees potential for better campaign performance.</li>
-<li>Budget Management: Help advertisers with pacing by modifying campaign budgets or bid values.</li>
-<li>Creative Review: Suggest or directly make changes to ad creatives to improve click-through rates or conversions.</li>
-<li>Compliance: Enforce regulatory guidelines or platform-specific rules regarding specific industries or ad formats.</li>
-</ul>
+<p>The "Create Campaign" feature is the heart of your DSP (Demand-Side Platform). It's where you set up all the details for a new advertising campaign. Let's break down the different options:</p>
 <h3 id="key-parameters-explained">Key Parameters Explained<a class="headerlink" href="#key-parameters-explained" title="Permanent link">&para;</a></h3>
 <ul>
-<li>ADV ID / CID: Identifiers that associate the campaign with a specific advertiser and their campaign ID.</li>
-<li>CAMPAIGN TYPE: The pricing model for the campaign (CPM, CPC, etc.- explanation below)</li>
-<li>CAMPAIGN NAME: Descriptive title for easy identification.</li>
-<li>DOMAIN: Websites or apps where the campaign's ads are intended to appear.</li>
-<li>PRIMARY / SECONDARY CATEGORY: Detailed content classification based on IAB taxonomy for accurate targeting and content moderation.</li>
-<li>TITLE / DESCRIPTION: The actual ad copy that will be displayed to users.</li>
-<li>STATUS: Controls whether a campaign is PENDING for review, ACTIVE, or BLOCKED.</li>
-<li>ACTION: Offers additional control to 'stop' a campaign while keeping it on the platform, and 'start' it again.</li>
-<li>CREATED ON: The date the campaign was initially submitted.</li>
+<li>CAMPAIGN TYPE:  This is how you'll pay for your ads:</li>
+<li>CPM: Cost per Mille (thousand impressions) - You pay each time your ad is shown 1000 times.</li>
+<li>CPC: Cost per Click - You pay when someone clicks on your ad.</li>
+<li>CPV: Cost per View - You pay when someone watches a video ad.</li>
+<li>CPL: Cost per Lead - You pay when someone fills out a form (like to sign up for a newsletter).</li>
+<li>CPA: Cost per Acquisition - You pay when someone completes a specific action (like buying a product).</li>
+<li>CPI: Cost per Install - You pay when someone installs your mobile app.</li>
+<li>CAMPAIGN NAME: A  name to identify your campaign, like "Summer Sale Promotion".</li>
+<li>DOMAIN: The website where you want your ads to show up (if you're targeting specific websites).</li>
+<li>PRIMARY / SECONDARY CATEGORY:  These help the DSP understand the content of your ad and match it to the right websites and apps.  For example, if you're advertising headphones, a primary category might be "Technology &amp; Computing" and the secondary category "Style &amp; Fashion".</li>
+<li>TITLE:  The headline of your ad that people will see.</li>
+<li>DESCRIPTION:  A short description about your product or service.</li>
 </ul>
-<h3 id="campaign-type-definitions">Campaign Type Definitions<a class="headerlink" href="#campaign-type-definitions" title="Permanent link">&para;</a></h3>
-<ul>
-<li>CPM: Cost Per Mille (Thousand Impressions). Advertiser pays a fixed price for every 1000 ad displays.</li>
-<li>CPC: Cost Per Click. Advertiser pays each time a user clicks their ad.</li>
-<li>CPV: Cost Per View. Common with video ads, advertiser pays when the ad is viewed for a certain duration.</li>
-<li>CPL: Cost Per Lead. Advertiser pays when a user completes a lead generation form.</li>
-<li>CPA: Cost Per Action. Focused on conversions, the advertiser pays when a specific action is taken (purchase, etc.)</li>
-<li>CPI: Cost Per Install. Used with mobile app install campaigns.</li>
-</ul>
-<h3 id="admin-panel-workflow">Admin Panel Workflow<a class="headerlink" href="#admin-panel-workflow" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Campaign Creation: Advertiser creates a new campaign in their interface.</li>
-<li>Submission &amp; Review: Admin receives the campaign for thorough review based on content, targeting, and compliance.</li>
-<li>Approval or Rejection: The campaign is approved (ACTIVE), set to PENDING for further investigation. or BLOCKED if it violates guidelines.</li>
-<li>Monitoring &amp; Editing: Admin tracks campaign performance and can directly modify settings to aid in optimization.</li>
-</ul>
+<h3 id="how-it-works">How It Works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h3>
+<p>You Fill it Out:  You choose the type of campaign, give it a name, target specific websites (if you want), pick categories, and create your ad's title and description.
+DSP Does the Rest: The DSP uses this information to find the best places to show your ad and get you the results you want based on your payment method (clicks, views, etc.).</p>
+<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
+<p>Let's say you sell running shoes.  Your campaign setup could look like this:
+* Campaign Type: CPC (because you want people to click on your ad and go to your website)
+* Campaign Name: Spring Running Sale
+* Domain: (leave blank if you're not targeting specific sites)
+* Primary Category: Sports
+* Secondary Category: Style &amp; Fashion
+* Title: Get 20% Off Running Shoes
+* Description: Upgrade your run with our latest styles.
+With this setup, your ads will target people interested in sports and fashion, enticing them to click and  visit your shoe website!</p>
 
 
 

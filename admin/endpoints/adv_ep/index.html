@@ -72,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#explain-key-parameters" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1432,6 +1437,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Adv EP
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1441,6 +1457,50 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#explain-key-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explain Key Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admin-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Admin Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Cases
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1786,6 +1846,41 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#explain-key-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explain Key Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admin-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Admin Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Cases
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1801,7 +1896,39 @@
 
   <h1>Adv EP</h1>
 
-
+<p>This feature provides admins with fine-grained control over where an advertiser's ads can appear. It empowers you to define specific websites, apps, and ad formats (endpoints) that align with an advertiser's campaign goals and targeting.</p>
+<ul>
+<li>Precision Targeting: Ensure an advertiser's ads only display on the most relevant and suitable websites, apps, and within specific ad placements.</li>
+<li>Brand Safety: Protect an advertiser's reputation by proactively excluding endpoints with undesirable content or those that don't fit their brand values.</li>
+<li>Budget Optimization: Focus ad spend on endpoints that have historically performed well for an advertiser, avoiding wasted impressions on unsuitable placements.</li>
+</ul>
+<h3 id="explain-key-parameters">Explain Key Parameters<a class="headerlink" href="#explain-key-parameters" title="Permanent link">&para;</a></h3>
+<ul>
+<li>ADV ID: Unique identifier for the advertiser.</li>
+<li>ADV EPID: Unique identifier for a specific endpoint created for the advertiser.</li>
+<li>TYPE: The format and platform of the ad placement (APP_ANDROID_BANNER, SITE_VIDEO, etc.).</li>
+<li>AD SIZE: The dimensions of the ad creative (300x50, 320x100, etc.).</li>
+<li>END POINT URL: The specific website address or app identifier where the ad will display.</li>
+<li>AUCTION / PRICING Details (AT, IS PMP, DEAL ID, etc.): Technical settings determining how those ad placements will be bought and sold.</li>
+<li>USER / IP FCAP: Frequency capping controls.</li>
+<li>BID MARGIN: Possible additional markup/margin the platform might take.</li>
+<li>GZIP: Potential setting related to compression to reduce ad load times.</li>
+<li>STATUS: Controls whether the endpoint is ACTIVE, PENDING approval, or BLOCKED.</li>
+<li>ACTION: Likely dictates whether the endpoint is included in current ad requests (RUNNING) or paused (STOPPED).</li>
+</ul>
+<h3 id="admin-workflow">Admin Workflow<a class="headerlink" href="#admin-workflow" title="Permanent link">&para;</a></h3>
+<p>Campaign Setup: During an advertiser's campaign creation, the admin collaborates to define the desired target environments (types of apps, websites).
+Endpoint Creation: The admin creates specific endpoints tailored to the advertiser, including websites, apps, and compatible ad formats.
+Technical Setup: The admin configures the endpoint details (pricing models, bidding parameters, any special instructions via TAG ID).
+Monitoring &amp; Optimization: The admin tracks the performance of each endpoint, potentially disabling poorly performing ones and adjusting settings to improve campaign results.</p>
+<h3 id="use-cases">Use Cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Niche Advertiser: Create highly targeted endpoints for an advertiser promoting a hiking app, focusing on outdoor blogs, fitness apps, and relevant websites.</li>
+<li>Competitor Avoidance: Explicitly block an advertiser's endpoints from appearing on their competitor's websites or apps.</li>
+<li>Performance-based Refinement: Pause endpoints that consistently have low click-through rates or poor conversion performance.</li>
+<li>Troubleshooting: If an advertiser's campaign unexpectedly has no impressions, investigate endpoint status and settings.</li>
+</ul>
+<hr />
 
 
 

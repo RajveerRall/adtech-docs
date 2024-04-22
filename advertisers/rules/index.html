@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#allow-or-block-specific-ads" class="md-skip">
+        <a href="#key-parameters-explained" class="md-skip">
           Skip to content
         </a>
       
@@ -838,37 +838,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#allow-or-block-specific-ads" class="md-nav__link">
+  <a href="#key-parameters-explained" class="md-nav__link">
     <span class="md-ellipsis">
-      Allow or Block Specific Ads
+      Key Parameters Explained
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Allow or Block Specific Ads">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Works
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How It Works">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#rule-type-allowblock" class="md-nav__link">
+  <a href="#example-uses" class="md-nav__link">
     <span class="md-ellipsis">
-      RULE TYPE (ALLOW/BLOCK)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rule-category" class="md-nav__link">
-    <span class="md-ellipsis">
-      RULE CATEGORY
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-use-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Use Cases
+      Example Uses
     </span>
   </a>
   
@@ -1866,37 +1857,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#allow-or-block-specific-ads" class="md-nav__link">
+  <a href="#key-parameters-explained" class="md-nav__link">
     <span class="md-ellipsis">
-      Allow or Block Specific Ads
+      Key Parameters Explained
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Allow or Block Specific Ads">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Works
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How It Works">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#rule-type-allowblock" class="md-nav__link">
+  <a href="#example-uses" class="md-nav__link">
     <span class="md-ellipsis">
-      RULE TYPE (ALLOW/BLOCK)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rule-category" class="md-nav__link">
-    <span class="md-ellipsis">
-      RULE CATEGORY
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-use-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Use Cases
+      Example Uses
     </span>
   </a>
   
@@ -1924,50 +1906,45 @@
 
   <h1>Rules</h1>
 
-<hr />
-<blockquote>
-<p><strong>Note:</strong> This section is under construction. Please check back soon for updates.</p>
-</blockquote>
-<hr />
-<p>Rules provide precise control over which ad requests are accepted or rejected for specific endpoints in your SSP.  They function as filters, adding another layer of customization beyond whitelisting. Here's the core difference:</p>
-<h2 id="allow-or-block-specific-ads">Allow or Block Specific Ads<a class="headerlink" href="#allow-or-block-specific-ads" title="Permanent link">&para;</a></h2>
-<p>You can configure the below parameters to allow/block ad request for specific end points.</p>
-<p><a class="glightbox" href="../assets/rules.png" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="img.png" src="../assets/rules.png" /></a></p>
-<h3 id="rule-type-allowblock">RULE TYPE (ALLOW/BLOCK)<a class="headerlink" href="#rule-type-allowblock" title="Permanent link">&para;</a></h3>
+<p>This feature gives you powerful customization tools to dictate where your ads can and cannot appear based on a variety of criteria. Think of it as setting up traffic lights for where your ads get to travel on the ad placement highway.</p>
 <ul>
-<li>
-<p><strong>ALLOW</strong>: Only ad requests that MATCH the specified criteria will be accepted for this endpoint.</p>
-</li>
-<li>
-<p><strong>BLOCK</strong>: Ad requests that MATCH the specified criteria will be rejected for this endpoint.</p>
-</li>
-<li>
-<p><strong>EPID</strong>: This is the unique Endpoint ID to which the rule will apply.</p>
-</li>
+<li>Enhanced Brand Safety: Protect your brand's reputation by proactively blocking ads from appearing on undesirable websites, apps, or next to specific types of content.</li>
+<li>Precise Targeting:  Focus your ad delivery on websites, apps, and audiences that are most likely to be receptive to your messaging, improving campaign efficiency.</li>
+<li>Budget Optimization:  Conserve your budget by preventing ad spending in locations or on content types that are historically low-performing or too expensive.</li>
 </ul>
-<h3 id="rule-category">RULE CATEGORY<a class="headerlink" href="#rule-category" title="Permanent link">&para;</a></h3>
-<p>You can allow or block specific ads based on the below Rule Categories:</p>
+<h3 id="key-parameters-explained">Key Parameters Explained<a class="headerlink" href="#key-parameters-explained" title="Permanent link">&para;</a></h3>
 <ul>
-<li>
-<p><strong>IAB-CAT</strong>: Filter based on IAB content categories (e.g., block ads from IAB-25 - Non-Standard Content category)</p>
-</li>
-<li>
-<p><strong>CID</strong>: This likely stands for "Country ID." You can allow or block ads based on the user's geographic location.</p>
-</li>
-<li>
-<p><strong>CRID</strong>: This might stand for "Creative ID." You could block specific ad creatives if you've identified them as problematic.</p>
-</li>
-<li>
-<p><strong>AD-DOMAIN:</strong> Allows for filtering based on the advertiser's domain.</p>
-</li>
+<li>Traffic Control: Rules help you control where your ads can or cannot appear.</li>
+<li>Customization: You create the rules – it's about fitting your specific needs.</li>
+<li>Allowing vs. Blocking:</li>
+<li>ALLOW: Only requests matching your rule will get your ads.</li>
+<li>BLOCK: Requests matching your rule won't be able to show your ads.</li>
+<li>Setup Sections</li>
+<li>RULE TYPE: Choose "ALLOW" or "BLOCK."</li>
+<li>APPLY ON:</li>
+<li>END-POINTS: If you want the rule to apply to specific ad types (like video ads for Android).</li>
+<li>CID: Apply the rule to a specific Campaign ID.</li>
+<li>CRID: Apply the rule to a specific Creative ID (an individual ad).</li>
+<li>RULE CATEGORY: What the rule is based on:</li>
+<li>IAB-CAT: Target or block based on website content category (IAB stands for Interactive Advertising Bureau, they have standard categories like Sports, News, etc.)</li>
+<li>COUNTRY/CITY/ZIP/IP/CARRIER: Location-based targeting or blocking.</li>
+<li>BROWSER/IFA/UA: Technical targeting based on the user's device and browsing info.</li>
+<li>DOMAIN: Block or allow ads on specific websites.</li>
 </ul>
-<h3 id="example-use-cases">Example Use Cases<a class="headerlink" href="#example-use-cases" title="Permanent link">&para;</a></h3>
-<p>Below are some example use cases where you would want to implement Rules:</p>
+<h2 id="how-it-works">How It Works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Competition Prevention</strong>: Avoid promoting your competitors by setting a BLOCK rule for their specific Creative ID (CRID). </li>
-<li><strong>Sensitive Content</strong>: Protect your brand reputation by setting a BLOCK rule for IAB content categories that are unsuitable for your audience. </li>
-<li><strong>Geo-Targeting</strong> (ALLOW): Maximize the effectiveness of a localized campaign by creating an ALLOW rule for the target country (CID). </li>
-<li><strong>Premium Advertisers</strong> (ALLOW): Ensure your most desirable ad inventory is seen by top-tier advertisers by setting an ALLOW rule for their AD-DOMAINS.</li>
+<li>You Create a Rule:  Let's say you want to BLOCK your ads from showing on websites categorized as "gambling" (IAB-CAT).</li>
+<li>DSP Checks In: Every time there's a potential spot for your ad, the DSP will see if it matches any of your rules.
+Action:
+If your ad matches a BLOCK rule, it won't be shown there.
+If your ad matches an ALLOW rule, it's still in the running.</li>
+</ul>
+<h3 id="example-uses">Example Uses<a class="headerlink" href="#example-uses" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Brand Safety: BLOCK ads from appearing on websites with adult content or controversial topics.</li>
+<li>Niche Targeting: ALLOW ads only on websites that cater to a specific hobby or interest that matches your target audience.</li>
+<li>Competitor Avoidance: BLOCK ads from appearing on your competitors' websites or apps.</li>
+<li>Budget Control: Block ads in super expensive locations if you're on a tight budget.</li>
 </ul>
 
 

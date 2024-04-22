@@ -72,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#key-parameters-explained" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1411,6 +1416,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Pub EP
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1420,6 +1436,50 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-parameters-explained" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Parameters Explained
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admin-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Admin Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Cases
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1786,6 +1846,41 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-parameters-explained" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Parameters Explained
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admin-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Admin Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Cases
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1801,7 +1896,42 @@
 
   <h1>Pub EP</h1>
 
-
+<p>This feature gives admins fine-grained control over the specific websites and apps ("endpoints") where a publisher's ad inventory can be displayed through your platform. This includes the ability to verify a publisher's endpoints, as well as directly create or edit them as needed.</p>
+<ul>
+<li>Inventory Control: Ensures publishers' ads only appear on approved websites or within approved apps. This is critical for upholding quality standards, adhering to a publisher's preferences, and for brand safety reasons.</li>
+<li>Transparency: Provides a centralized view to see what kind of ad placements a publisher offers (e.g., banner, video) and understand technical setup details.</li>
+<li>Customization: Allows for tailored settings on a per-publisher and per-endpoint basis, such as specific countries where their placements can appear or pricing/auction customizations.</li>
+</ul>
+<h3 id="key-parameters-explained">Key Parameters Explained<a class="headerlink" href="#key-parameters-explained" title="Permanent link">&para;</a></h3>
+<ul>
+<li>PUB ID: Unique identifier for the publisher.</li>
+<li>PUB EPID: A unique identifier for each specific endpoint offered by the publisher.</li>
+<li>TYPE: The format and platform of the ad placement:</li>
+<li>APP_ANDROID_(Banner, Video, Native, etc. for Android apps)</li>
+<li>APP_IOS_(Banner, Video, etc. for iOS apps)</li>
+<li>SITE_(For website placements)</li>
+<li>CTV_(Connected TV placements)</li>
+<li>END POINT URL: The specific web address or app identifier where the ad will be displayed.</li>
+<li>STATUS: Controls whether the endpoint is ACTIVE, PENDING approval, or BLOCKED.</li>
+<li>ACTION: Likely controls if the endpoint is included in ad requests (RUNNING) or excluded (STOPPED).</li>
+<li>AUCTION / PRICING Details (AT, IS PMP, DEAL ID, etc.): Technical settings determining how those ad placements will be bought and sold.</li>
+<li>USER / IP FCAP: Frequency capping controls to limit how often ads are shown to a single user or IP address.</li>
+<li>MAX, THROTTLE, COUNTRY ALLOWED: Additional controls to refine targeting or manage ad delivery.</li>
+</ul>
+<h3 id="admin-workflow">Admin Workflow<a class="headerlink" href="#admin-workflow" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Publisher Onboarding: During the setup process, a publisher would submit their available endpoints (websites and apps where they want to display ads).</li>
+<li>Admin Verification: Admins carefully review each endpoint, verifying it aligns with platform standards and any publisher-specific agreements.</li>
+<li>Endpoint Creation (If Needed): Admins might directly create endpoints for a publisher, especially for specific deal types or unique customizations.</li>
+<li>Ongoing Management: Admins can edit settings, enable/disable endpoints, or change pricing models as required.</li>
+</ul>
+<h3 id="use-cases">Use Cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Brand Safety: Block a publisher's endpoint if it's discovered to be a website with objectionable content.</li>
+<li>Customization: Create special endpoints tied to specific deals negotiated with a high-profile publisher.</li>
+<li>Traffic Management: Use throttling controls on an endpoint if a specific website or app is receiving far more impressions than desired.</li>
+<li>Troubleshooting: If a publisher's ads aren't appearing as expected, the admin can check the endpoint status and settings for any issues.</li>
+</ul>
 
 
 

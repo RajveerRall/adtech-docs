@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#whitelist-any-app-bundle-or-site-domain" class="md-skip">
+        <a href="#use-cases" class="md-skip">
           Skip to content
         </a>
       
@@ -708,9 +708,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#whitelist-any-app-bundle-or-site-domain" class="md-nav__link">
+  <a href="#use-cases" class="md-nav__link">
     <span class="md-ellipsis">
-      Whitelist any app bundle or site domain
+      Use Cases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-parameters-explained" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key parameters explained
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example:
     </span>
   </a>
   
@@ -1833,9 +1851,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#whitelist-any-app-bundle-or-site-domain" class="md-nav__link">
+  <a href="#use-cases" class="md-nav__link">
     <span class="md-ellipsis">
-      Whitelist any app bundle or site domain
+      Use Cases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-parameters-explained" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key parameters explained
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example:
     </span>
   </a>
   
@@ -1858,38 +1894,33 @@
 
   <h1>Apps/Domain</h1>
 
-<hr />
-<blockquote>
-<p><strong>Note:</strong> This section is under construction. Please check back soon for updates.</p>
-</blockquote>
-<hr />
-<p>Whitelisting allows you to exert granular control over the ad requests you receive for your ad placements (endpoints). By creating a whitelist, you approve specific domains (websites) or app bundle IDs (mobile applications) as authorized to send bid requests for your inventory. 
-Additionally, you can often IAB content categories to further refine targeting and ensure the content aligns with your preferences.</p>
-<p><a class="glightbox" href="assets/appsdomain.gif" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="" src="assets/appsdomain.gif" /></a></p>
-<h2 id="whitelist-any-app-bundle-or-site-domain">Whitelist any app bundle or site domain<a class="headerlink" href="#whitelist-any-app-bundle-or-site-domain" title="Permanent link">&para;</a></h2>
-<p>To Whitelist End points, you have to configure the below parameters:</p>
+<p>This feature gives you granular control over where your ads can be displayed within your chosen Advertisers network of apps and websites. It's essentially a way to create your own exclusive "approved list" for ad placements.</p>
 <ul>
-<li>
-<p><strong>EPID</strong>: Each endpoint in your SSP has a unique Endpoint ID. These are used internally to manage the ad spaces.</p>
-</li>
-<li>
-<p><strong>"Want to whitelist?</strong>: SINGLE / MULTIPLE": This allows you to whitelist either:
-SINGLE: One specific domain or app bundle.
-MULTIPLE: A list of domains or app bundles.</p>
-</li>
-<li>
-<p><strong>DOMAIN / APP BUNDLE ID</strong>: The actual domain (e.g., www.example.com) or app bundle ID of the advertiser's property you want to whitelist.</p>
-</li>
-<li>
-<p><strong>URL / STORE URL</strong>: Depending on if it's a website or app, you'll provide a web address or a link to the application on the app store.</p>
-</li>
-<li>
-<p><strong>APP/SITE NAME</strong>: A descriptive name, making it easier to manage your whitelist.</p>
-</li>
-<li>
-<p><strong>PRIMARY CATEGORY/SECONDARY CATEGORY</strong>: You'll select IAB content categories to help with targeting and to ensure the content aligns with your preferences.</p>
-</li>
+<li>Brand Safety: Ensure your ads only appear on websites or within apps that align with your brand values and content standards. Protect against association with objectionable or harmful content.</li>
+<li>Targeting Precision: Directly target your ads to apps/websites where your ideal audience is likely to spend their time, increasing relevance and potentially improving campaign performance.</li>
+<li>Content Suitability: Avoid situations where ads for your family-friendly product end up on an inappropriate or controversial website.</li>
 </ul>
+<h3 id="use-cases">Use Cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h3>
+<p>Reputation Management: A luxury brand might whitelist reputable fashion websites and apps, but exclude gossip sites or apps with unverified user-generated content.
+Niche Audiences: A company selling vegan food products could whitelist websites and apps focused on healthy living, vegetarian recipes, or cruelty-free products.
+Performance Optimization: If you have historical data indicating particularly strong performance from specific apps or websites, whitelisting them ensures your ads continue to be prioritized on those placements.</p>
+<h3 id="key-parameters-explained">Key parameters explained<a class="headerlink" href="#key-parameters-explained" title="Permanent link">&para;</a></h3>
+<ul>
+<li>"Whitelist any app bundle or site domain":  This means you create a list of approved apps (by bundle ID) or websites (by domain name) where you want your ads to show.</li>
+<li>"In case of no white-listed domains or apps...": If you don't create a list, your ads could appear on any app or website the DSP works with.</li>
+<li>"EPID":  Endpoint ID – each type of ad placement (like an Android banner ad) has its own ID number.</li>
+<li>"Want to whitelist? SINGLE / MULTIPLE":</li>
+<li>SINGLE: You want to whitelist only one app or website at a time.</li>
+<li>MULTIPLE: You want to upload a whole list of apps or websites.</li>
+<li>"Whitelist": This section is where you actually list out the apps and websites you want to target:</li>
+<li>Search Bar: Type in names and ID numbers to find the apps and sites you want.</li>
+<li>List Below: Shows you what you've already added to your list.</li>
+</ul>
+<h3 id="example">Example:<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
+<p>Let's say you're selling kids' clothes.  You could use this feature to:
+* Target: Popular kids' game apps and parenting websites.
+* Avoid: Apps and websites focused on adult topics.
+* Important Note: The note section emphasizes that you need to match domains/bundles to the right end point type. You don't want to put iOS apps on a list meant for Android banners!</p>
 
 
 

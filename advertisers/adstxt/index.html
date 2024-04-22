@@ -72,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#how-it-works" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -949,6 +954,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    ADS.TXT
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -958,6 +974,41 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Entry
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1784,6 +1835,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Entry
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1799,26 +1876,27 @@
 
   <h1>ADS.TXT</h1>
 
-<hr />
-<blockquote>
-<p><strong>Note:</strong> This section is under construction. Please check back soon for updates.</p>
-</blockquote>
-<hr />
-<p>Publishers place an ads.txt file on the root directory of their website. This file acts as a public record, essentially declaring which digital sellers are authorized to resell their ad inventory. Ad exchanges, DSPs (Demand-Side Platforms), and other programmatic buyers can access and verify the information in the ads.txt file. This transparency helps ensure they're purchasing ad impressions from legitimate sources authorized by the publisher. By listing authorized sellers, publishers can help prevent unauthorized parties from fraudulently selling their ad inventory. This mitigates issues like domain spoofing, where bad actors attempt to sell ad space they don't own.</p>
-<p>You have to add entries in your domain/sites inside app-ads.txt or ads.txt. This is a transparent way to validate the sellers and buyers in the supply chain. Without these entries Bid request will be invalid.</p>
-<p><a class="glightbox" href="../assets/adstxt.png" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="img.png" src="../assets/adstxt.png" /></a></p>
-<p>Here's an example of an entry: demomedia.com, 50621, DIRECT.</p>
-<ul>
-<li>
-<p><strong>demomedia.com:</strong> This identifies the seller's domain.  In this example, it means a company called "demomedia.com" is authorized to sell ad space on the publisher's website.</p>
-</li>
-<li>
-<p><strong>50621</strong>:  This represents the seller's unique account ID within the ad exchange or platform they use. This ID allows for precise identification of the seller.</p>
-</li>
-<li>
-<p><strong>DIRECT</strong>:  This indicates the type of relationship between the publisher and the seller. "DIRECT" signifies that the publisher has a direct sales arrangement with this specific seller. Another possible value is "RESELLER".</p>
-</li>
-</ul>
+<p>Advertisers are suggested to add their own as well as other buyers' entries so that publishers can follow and update the same in their domain. This is a transparent way to validate the sellers and buyers in the supply chain.</p>
+<p>By adding your ads.txt entries, you publicly declare:
+* Who You Are: Your identifier information as an advertiser/buyer.
+* Authorized Resellers: DSPs, ad networks, or other intermediaries you allow to resell your ad inventory.</p>
+<h3 id="how-it-works">How It Works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h3>
+<ol>
+<li>You Add Entries</li>
+<li>Domain: Your domain name, if you own any websites or apps where you might display ads bought through the DSP.</li>
+<li>Your ID: A unique identifier assigned by your DSP or an industry body.</li>
+<li>Type: Direct (you're buying inventory directly) or Reseller (you're allowing others to sell on your behalf).</li>
+<li>Third-Party ID: The ID of the authorized reseller (if applicable).</li>
+<li>Publishers Take Note:  Ideally, publishers you want to work with will check your ads.txt file. This helps them confirm that they're dealing with legitimate buyers or resellers when your ad requests come through.</li>
+<li>Fraud Prevention: This system makes it harder for bad actors to impersonate you and sell ad inventory that they don't control.</li>
+</ol>
+<h3 id="example-entry">Example Entry<a class="headerlink" href="#example-entry" title="Permanent link">&para;</a></h3>
+<p>Let's analyze one of the existing entries:
+* indexexchange.com, 29648, RESELLER, 50b1c356f2c5c8fc
+* Domain: indexexchange.com (an ad exchange)
+* ID: 29648 (Unique Index Exchange ID)
+* Type: RESELLER (You authorize them to resell your inventory).
+* Third-Party ID: 50b1c356f2c5c8fc (Likely their unique ID for you)</p>
 
 
 
