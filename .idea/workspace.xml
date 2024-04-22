@@ -4,65 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d95ef7b-869e-4849-860a-64677c8366b8" name="Changes" comment="ymal file added">
-      <change afterPath="$PROJECT_DIR$/docs/admin/accounts/advertisers_account.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/accounts/publishers_account.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/admin.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/adstxt.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/appsdomain/adv-appssite.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/appsdomain/pub-appssite.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/billing/adv-billing.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/billing/pub-billing.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/crid/campaigns.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/crid/creatives.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/crid/targeting.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/dashboard.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/endpoint_mapping.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/endpoints/adv_ep.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/endpoints/pub_ep.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/profile/advertisers_profile.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/profile/publishers_profile.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/profile_settings.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/reports.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/reports/direct_campaigns.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/reports/end_points.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/reports/failed_request.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/reports/invalid_transaction.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/admin/rules.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/adstxt.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/apps_domain.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/assets/adstxt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/assets/architech_workflow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/assets/dashboard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/assets/end_point.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/assets/endpoint.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/assets/endpoint_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/assets/endpoint_startpause.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/assets/features.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/assets/mermaid-diagram-2024-04-18-012359.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/assets/rules.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/billing.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/crid/campaigns.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/crid/creatives.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/crid/targeting.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/dashboard.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/end_points.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/profile_settings.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/publisher.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/reports.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/reports/failed_bids.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/reports/invalid_bids.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/reports/monetization.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/advertisers/rules.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/publisher/assets/adstxt.png" afterDir="false" />
+    <list default="true" id="0d95ef7b-869e-4849-860a-64677c8366b8" name="Changes" comment="admin platform context updated">
+      <change afterPath="$PROJECT_DIR$/docs/advertisers/reports/endpoint.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/publisher/adstxt.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/publisher/adstxt.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/publisher/assets/appsdomain.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/publisher/dashboard.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/publisher/dashboard.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/publisher/reports/failed_bids.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/publisher/reports/failed_bids.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/publisher/reports/monetization.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/publisher/reports/monetization.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/publisher/rules.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/publisher/rules.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/admin/endpoints/adv_ep.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/admin/endpoints/adv_ep.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/admin/endpoints/pub_ep.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/admin/endpoints/pub_ep.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/advertisers/adstxt.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/advertisers/adstxt.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/advertisers/apps_domain.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/advertisers/apps_domain.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/advertisers/billing.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/advertisers/billing.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/advertisers/crid/campaigns.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/advertisers/crid/campaigns.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/advertisers/crid/creatives.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/advertisers/crid/creatives.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/advertisers/crid/targeting.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/advertisers/crid/targeting.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/advertisers/end_points.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/advertisers/end_points.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/advertisers/reports/invalid_bids.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/advertisers/reports/invalid_bids.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/advertisers/rules.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/advertisers/rules.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713497727990</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="admin platform context updated">
+      <option name="closed" value="true" />
+      <created>1713703051577</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713703051579</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +159,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ymal file added" />
-    <option name="LAST_COMMIT_MESSAGE" value="ymal file added" />
+    <MESSAGE value="admin platform context updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin platform context updated" />
   </component>
 </project>

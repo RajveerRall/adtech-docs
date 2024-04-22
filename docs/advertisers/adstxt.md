@@ -1,18 +1,24 @@
+Advertisers are suggested to add their own as well as other buyers' entries so that publishers can follow and update the same in their domain. This is a transparent way to validate the sellers and buyers in the supply chain.
 
-***
-> **Note:** This section is under construction. Please check back soon for updates.
-***
+By adding your ads.txt entries, you publicly declare:
+* Who You Are: Your identifier information as an advertiser/buyer.
+* Authorized Resellers: DSPs, ad networks, or other intermediaries you allow to resell your ad inventory.
 
-Publishers place an ads.txt file on the root directory of their website. This file acts as a public record, essentially declaring which digital sellers are authorized to resell their ad inventory. Ad exchanges, DSPs (Demand-Side Platforms), and other programmatic buyers can access and verify the information in the ads.txt file. This transparency helps ensure they're purchasing ad impressions from legitimate sources authorized by the publisher. By listing authorized sellers, publishers can help prevent unauthorized parties from fraudulently selling their ad inventory. This mitigates issues like domain spoofing, where bad actors attempt to sell ad space they don't own.
+### How It Works
 
-You have to add entries in your domain/sites inside app-ads.txt or ads.txt. This is a transparent way to validate the sellers and buyers in the supply chain. Without these entries Bid request will be invalid.
+1. You Add Entries
+   2. Domain: Your domain name, if you own any websites or apps where you might display ads bought through the DSP.
+   3. Your ID: A unique identifier assigned by your DSP or an industry body.
+   4. Type: Direct (you're buying inventory directly) or Reseller (you're allowing others to sell on your behalf).
+   5. Third-Party ID: The ID of the authorized reseller (if applicable).
+6. Publishers Take Note:  Ideally, publishers you want to work with will check your ads.txt file. This helps them confirm that they're dealing with legitimate buyers or resellers when your ad requests come through.
+7. Fraud Prevention: This system makes it harder for bad actors to impersonate you and sell ad inventory that they don't control.
 
-![img.png](assets/adstxt.png)
+### Example Entry
 
-Here's an example of an entry: demomedia.com, 50621, DIRECT.
-
-- **demomedia.com:** This identifies the seller's domain.  In this example, it means a company called "demomedia.com" is authorized to sell ad space on the publisher's website.
-
-- **50621**:  This represents the seller's unique account ID within the ad exchange or platform they use. This ID allows for precise identification of the seller.
-
-- **DIRECT**:  This indicates the type of relationship between the publisher and the seller. "DIRECT" signifies that the publisher has a direct sales arrangement with this specific seller. Another possible value is "RESELLER".
+Let's analyze one of the existing entries:
+* indexexchange.com, 29648, RESELLER, 50b1c356f2c5c8fc
+* Domain: indexexchange.com (an ad exchange)
+* ID: 29648 (Unique Index Exchange ID)
+* Type: RESELLER (You authorize them to resell your inventory).
+* Third-Party ID: 50b1c356f2c5c8fc (Likely their unique ID for you)
